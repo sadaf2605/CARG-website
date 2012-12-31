@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>CARG</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="default.css" rel="stylesheet" type="text/css" />	
+
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<script type="text/javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+</script>
+</head>
+<div id="header">	
+	<a href="http://www.bracuniversity.ac.bd"><div id="bracuLogo"></div></a>
+<ul id="sddm">
+	<ul>
+			<li><a href="index.html" accesskey="H" title="Homepage"><b>H</b>ome</a></li>
+			<li><a href="projects.html" accesskey="R" title="CARG Projects"><b>P</b>rojects</a></li>
+			<li><a href="publications.html" accesskey="P" title="CARG Publications"><b>P</b>ublications</a></li>
+			<li id="enlarge"><a href="people.html" accesskey="E" title="CARG People" id="people"><b>P</b>eople</a></li>
+			<li><a href="news.html" accesskey="N" title="News"><b>N</b>ews </a></li>
+			
+			<li><a href="news.html" onmouseover="mopen('m6')" onmouseout="mclosetime()" >Collaboration</a>
+				<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<a href="#">DropDown</a>
+					<a href="#">DropDown</a>
+					<a href="#">DropDown</a>
+				</div>
+			</li>
+						
+			<li><a href="contact.html" accesskey="C" title="Contact Us"><b>C</b>ontact Us</a></li>
+	
+	</ul>
+</ul>
+</div>
+<div id="page">  
+<!-- end #sidebar -->
+		<p style="margin:20px 0px 0px 25px; font-size:20px"><b>Head of CARG</b></p>
+		
+		<ul id="super">
+		  <li>
+				<b>A K M Abdul Malek Azad,PhD</b><br/>
+				Associate Professor<br/>
+				Dept. of Electrical and Electronic Engineering (EEE) <br/>
+				BRAC University <br/>
+				66 Mohakhali <br/>
+				Dhaka 1212 <br/> 
+                                e-mail: <a href="mailto:a.azad@bracu.ac.bd">a.azad@bracu.ac.bd </a> <br/>
+                              website:<a href="http://www.bracuniversity.ac.bd/directories/www?code=7069">click here </a></li>
+		</ul>
+		
+		<br/><p style="margin-left:25px; font-size:20px"><b>CARG Members:</b></p>
+		
+		<ul  id="pageContent1">	
+                        <li><b>Dr. Md. Mosaddeque Rahman</b><br/>Assistant Professor<br/>Dept. of EEE<br/>e-mail: <a href=				"mailto:mosaddeq@bracu.ac.bd">mosaddeq@bracu.ac.bd</a></li>
+            <li><b>Marzia Alam</b><br/>Lecturer<br/>Dept. of EEE<br/>e-mail: <a href="mailto:marziaalam@bracu.ac.bd">marziaalam@bracu.ac.bd</a></li>
+			<li><b>Rumana Rahman</b><br/>Lecturer<br/> Dept. of EEE<br/>e-mail: <a href="mailto:rumanar@bracu.ac.bd">rumanar@bracu.ac.bd</a></li>
+			
+			<li><b>Md. Asaduzzaman All Faruq</b><br/>
+			  Research Assistant<br/>
+		    e-mail: <a href="mailto:aftomal@bracu.ac.bd">aftomal@bracu.ac.bd</a> </li>	
+			<li><b>Raquib Ahmed</b><br/>
+			  Research Assistant<br/>
+		    e-mail:<a href="mailto:raquibahmed@bracu.ac.bd
+">raquibahmed@bracu.ac.bd</a>, <a href="mailto:raquib_ah@hotmail.com">raquib_ah@hotmail.com</a></li>
+            <li><b>Tanvir Sobhan</b><br/>Research Assistant<br/>e-mail: <a href="mailto:tanvirsobhan2000@gmail.com">tanvirsobhan2000@gmail.com</a></li>
+            <li><b>Md. Asifur Rahman</b><br/>Research Assistant<br/>e-mail: <a href="mailto:asif.jn@hotmail.com">asif.jn@hotmail.com</a></li>
+            <li><b>Ishtiaque Asad</b><br/>Research Assistant<br/>e-mail:<a href="mailto:ishtiaque@bracu.ac.bd">ishtiaque@bracu.ac.bd</a>, <a href="mailto:ishtiaque2asad2@gmail.com">ishtiaque2asad2@gmail.com</a></li> 
+            <li><b>Md. Adnan Al Moshi</b><br/>Research Assistant<br/><a href="mailto:adn.bu2010@gmail.com">adn.bu2010@gmail.com</a></li>
+            <li><b>C. M. Iftekhar Hussain</b>(Study leave, Cranfield University,United Kingdom) <br/>
+              Research Assistant <br/>
+            e-mail: <a href="mailto:iftekhar.hussain@cranfield.ac.uk">iftekhar.hussain@cranfield.ac.uk</a>, <a href="mailto:cmih_brac@yahoo.com">cmih_brac@yahoo.com</a></li>
+            <li><b>Munshi Asadullah</b>(Study leave,Universidade de Algrave,Portugal)<br/>
+              Research Assistant<br/>
+            e-mail: <a href="mailto:asad.anto@gmail.com">asad.anto@gmail.com</a> </li>
+            <li><b>Chiranjeeb Basak</b>(Study leave, University of Stuttgart, Germany)<br/>
+              Research Assistant<br/>
+            e-mail: <a href="mailto:chiran_basak@hotmail.com">chiran_basak@hotmail.com</a></li>
+            <li><b>Ahmed Al Amin</b>(Study leave,University Of Gavle, Sweden)<br/>
+              Research Assistant<br/>
+            e-mail: <a href="mailto:tet09aan@student.hig.se">tet09aan@student.hig.se</a>, <a href="mailto:shaon_ahmed@yahoo.com"> 			 shaon_ahmed@yahoo.com</a></li>
+            <li><b>Md. Moniruzzaman</b>(Study leave, University Of Gavle, Sweden) <br/>
+			Research Assistant<br/>
+			e-mail: <a href="mailto:monir999@gmail.com">monir999@gmail.com</a></li>
+        </ul>
+		<br/><p style="margin-left:25px; font-size:20px"><b>CARG Coordinator:</b></p>
+		<ul id="pageContent1">
+		<li><b>Ishtiaque Asad</b><br/>
+		 e-mail:<a href="mailto:ishtiaque@bracu.ac.bd">ishtiaque@bracu.ac.bd</a>, <a href="mailto:ishtiaque2asad2@gmail.com">ishtiaque2asad2@gmail.com</a></li>
+		</ul>
+		<br/><p style="margin-left:25px; font-size:20px"><b>CARG Project Engineer:</b></p>
+		<ul id="pageContent1">
+		<li><b>Md. Raied Hasan</b><br/>
+		    e-mail: <a href="mailto:mraiedhasan@ieee.org">mraiedhasan@ieee.org</a></li>
+		</ul>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<div id="footerLeft"><p>Copyright &copy; 2010 <b>CARG</b></p></div>
+	<p id="developer">Developed By: <b><a href="http://www.snaresketcher.com/"><img src="images/ss2.png" /></a></b>
+	& <b> <a href="http://sadaf2605.appspot.com/"><img src="images/ss.png" /></a></b></p></div>
+</div>
+</body>
+</html>

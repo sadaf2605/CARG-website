@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>CARG</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="default.css" rel="stylesheet" type="text/css" />	
+
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<script type="text/javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+</script>
+</head>
+<div id="header">	
+	<a href="http://www.bracuniversity.ac.bd"><div id="bracuLogo"></div></a>
+<ul id="sddm">
+	<ul>
+			<li><a href="index.html" accesskey="H" title="Homepage"><b>H</b>ome</a></li>
+			<li><a href="projects.html" accesskey="R" title="CARG Projects"><b>P</b>rojects</a></li>
+			<li><a href="publications.html" accesskey="P" title="CARG Publications"><b>P</b>ublications</a></li>
+			<li><a href="people.html" accesskey="E" title="CARG People" id="people"><b>P</b>eople</a></li>
+			<li><a href="news.html" accesskey="N" title="News"><b>N</b>ews </a></li>
+			
+			<li><a href="news.html" onmouseover="mopen('m6')" onmouseout="mclosetime()" >Collaboration</a>
+				<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<a href="#">DropDown</a>
+					<a href="#">DropDown</a>
+					<a href="#">DropDown</a>
+				</div>
+			</li>
+						
+			<li id="enlarge"><a href="contact.html" accesskey="C" title="Contact Us"><b>C</b>ontact Us</a></li>
+	
+	</ul>
+</ul>
+</div>
+<div id="page">		
+	<ul id="super">
+		<li>
+			<b>A K M Abdul Malek Azad, PhD</b><br/>
+			Associate Professor<br/>
+				Dept. of Electrical and Electronic Engineering (EEE) <br/>
+				BRAC University <br/>
+				66 Mohakhali <br/>
+				Dhaka 1212 <br/>
+		    Tel:  +880-2-8824051, ext: 4024 <br/> 
+			Fax: +880-2-8810383  <br/>
+			e-mail: a.azad@bracu.ac.bd, a.azad@ieee.org <br/>
+                        website: <a href="http://www.bracuniversity.ac.bd/directories/www?code=7069">click here</a>   
+		</li>
+		<br/><br/>
+		<li>
+			<b>Ishtiaque Asad </b><br/>
+			CARG coordinator<br/>
+		    e-mail:<a href="mailto:ishtiaque@bracu.ac.bd">ishtiaque@bracu.ac.bd</a>, <a href="mailto:ishtiaque2asad2@gmail.com">ishtiaque2asad2@gmail.com</a>
+		</li>
+	</ul>	
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<div id="footerLeft"><p>Copyright &copy; 2010 <b>CARG</b></p></div>
+	<p id="developer">Developed By: <b><a href="http://www.snaresketcher.com/"><img src="images/ss2.png" /></a></b>
+	& <b> <a href="http://sadaf2605.appspot.com/"><img src="images/ss.png" /></a></b></p></div>
+</div>
+</body>
+</html>

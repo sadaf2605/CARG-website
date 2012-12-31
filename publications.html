@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>CARG</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="default.css" rel="stylesheet" type="text/css" />	
+
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<script type="text/javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+</script>
+</head>
+<div id="header">	
+	<a href="http://www.bracuniversity.ac.bd"><div id="bracuLogo"></div></a>
+<ul id="sddm">
+	<ul>
+			<li><a href="index.html" accesskey="H" title="Homepage"><b>H</b>ome</a></li>
+			<li><a href="projects.html" accesskey="R" title="CARG Projects"><b>P</b>rojects</a></li>
+			<li id="enlarge"><a href="publications.html" accesskey="P" title="CARG Publications"><b>P</b>ublications</a></li>
+			<li><a href="people.html" accesskey="E" title="CARG People" id="people"><b>P</b>eople</a></li>
+			<li><a href="news.html" accesskey="N" title="News"><b>N</b>ews </a></li>
+			
+			<li><a href="news.html" onmouseover="mopen('m6')" onmouseout="mclosetime()" >Collaboration</a>
+				<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<a href="#">DropDown</a>
+					<a href="#">DropDown</a>
+					<a href="#">DropDown</a>
+				</div>
+			</li>
+						
+			<li ><a href="contact.html" accesskey="C" title="Contact Us"><b>C</b>ontact Us</a></li>
+	
+	</ul>
+</ul>
+</div>
+<div id="page">  
+<!-- end #sidebar -->		
+	<ul id="pageContent">
+		<li><b><u>Selected Publications:</u></b></li>
+		<li>
+			<ol>	
+
+<ul>
+<li><b>Selected Publications:</b></li>
+</ul>
+
+<li> M. Azad, C. M. I. Hussain and M. Alam, <b>"A Different Approach to Improve the Performance of DPDC SCADA System" </b>Accepted to be appeared in <i>Journal of Energy and Power Engineering</i>, David Publishing, USA</li>
+
+<li>Adnan Al Moshi, Salwa Salam Cynthia, Eftakhairul Islam, Rumana Rahman and Akm Abdul Malek Azad, <b>"A Performance Analysis of Robotic Arm Manipulators Control System under Multitasking Environment" </b>published in <i>Journal of Energy and Power Engineering</i>, May 2012, Vol.: 2, Number: 5, Pages:327 - 331, ISSN 2159-5275 (Print) and ISSN 2159-5283 (Online), David Publishing, USA</li>
+
+<li> Jannatul Ferdous, Md Sanzidul Islam, Nabil Shaker, Bonny Amin Khan, A. Azad, <b>"Performance Improvement of SHWS by Increasing Thermal Efficiency Using Insulation Materials and Optimum Position of Solar Collectors" </b>published in <i>International Journal of Advance Renewable Energy Research</i>, 2012, Vol.: 1, Issue: 1, Pages:78 - 83, IJARER, Germany</li>
+
+<li> C. Basak, C. M. I.Hussain and A. M. Azad, <b>"A New Approach to Improve the Reliability of DPDC SCADA Communication Systems" </b>published in <i>Journal of Energy and Power Engineering</i>, July 2010, Vol.: 4, Number: 7, Pages:48 - 54, ISSN 1934-8975, David Publishing, USA</li>
+
+<li>S. A. Khan, R. Rahman and A. Azad, <b>"Solar Home System Components Qualification Testing Procedure And Its Effect In Bangladesh Perspective"</b> <i>Submitted to IEEE Global Humanitarian Technology Conference (GHTC 2012) - Technology for the Benefit of Humanity,</i> October 21 – October 24, 2012, Seattle, Washington, USA</li>
+
+<li> T. Faraz and A. Azad, <b>"Solar Battery Charging Station and Torque Sensor Based Electrically Assisted Tricycle"</b> <i>Submitted to IEEE Global Humanitarian Technology Conference (GHTC 2012) - Technology for the Benefit of Humanity,</i> October 21 – October 24, 2012, Seattle, Washington, USA</li>
+
+<li>M. R. Hasan, A. Rahman and A. Azad, <b>"Feasibility and Importance of an Automatic Controller for Solar Hot Water System"</b> <i>Proceedings of IEEE Global Humanitarian Technology Conference (GHTC 2011) - Technology for the Benefit of Humanity,</i> October 30 – November 1, 2011, Seattle, Washington, USA.</li>
+
+<li>Rachaen M. Huq, Md. Anamul Hoque, Partha Chakraborty, Numayer T. Shuvo<sup> </sup>and A. K. M. Azad, <b>"Development of Torque Sensor Based Electrically Assisted Hybrid Rickshaw"</b> <i>Submitted to IEEE 7th International Conference on Electrical and Computer Engineering (ICECE 2012)</i> December 20 – December 22, 2012, Dhaka, Bangladesh.</li>
+
+<li> I. Asad, A. A. Moshi, J. Ferdous and A. Azad, <b>"Comparative Study And Performance Analysis of Solar Panels Using Solar Simulator"</b> <i>Proceedings of International Conference of Renewable Energy: Generation and Application 2012</i>, Al-Ain, UAE, March 4-7, 2012</li>
+
+<li> M. Alam and A. Azad, <b>"Time Delay Analysis of Biomedical Signal Analyzer in Hard Real-Time Linux Environment" </b>Accepted to be appeared on <i>4th International Conference on Intelligent and Advanced System (ICIAS’12)</i>”, 12th -14th June, Malaysia 2012</li>
+
+<li>M. Alam and A. Azad, <b>"Development of Biomedical Data Acquisition System in Hard Real-Time Linux Environment" </b><i>International Conference on Biomedical Engineering (ICoBE’12),</i> vol., no., pp.436-440, 27-28 Feb. 2012, Malaysia</li>
+
+<li> J. Ferdous, M. S. Islam, N. Shaker, B. A. Khan and A. Azad, <b>"Performance improvement of SHWS by increasing thermal efficiency using insulation materials and optimum position of solar collectors" </b><i>Proceedings of the 2nd IEEE International Conference on the Developments in Renewable Energy Technology</i>, Bangladesh, January 2012</li>
+
+<li>A. A. Moshi, S. S. Cynthia, E. Islam, R. Rahman and A. M. Azad, <b>"Performance Analysis of Robotic Arm Manipulators Control System Under Multitasking Environment” </b>Proceedings of <i>IEEE 18Th International Conference on Industrial Engineering and Engineering Management (IE&amp;EM),</i> China, September 2011</li>
+
+<li> A. D. Paul, K. R. Urzoshi, R. S. Datta, A. Arsalan and A. M. Azad, <b>" Design and Development of Microcontroller Based ECG Simulator" </b><i>IFMBE Proceedings of the 5th Kuala Lumpur International Conference on Biomedical Engineering,</i> Malaysia, June 2011</li>
+
+<li> M. K. Arefin, M. R. Hasan and A. Azad, <b>"Characteristics and Cost Analysis of an Automatic Solar Hot Water System in Bangladesh"</b> <i>Proceedings of 2nd IEEE International Conference on Environmental Science and Technology, ICEST 2011</i>, Singapore, February 26-28, 2011</li>
+
+<li> I. Asad, M. T. Sobhan, K. M. S. Morshed, M. Asaduzzaman and A. M. Azad, <b>"Performance Comparison of Traffic Light Control System Using GAL and FPGA "</b> <i>Proceedings of International Conference on Control and Applications, IASTED 2010,</i> Banff, Alberta, Canada, July 15-17, 2010</li>
+
+<li> M. Alam, M. R. Hasan, R. Ahmed and A. Azad, <b>"Output Power Improvement of Photovoltaic Cell Using Automatic Sun Tracking System"</b> <i>Proceedings of International Conference of Renewable Energy: Generation and Application 2010</i>, Al-Ain, UAE, March 8-10, 2010</li>
+
+<li> M. Hossain, E. Mohith and A.Azad, <b>"Solar Home Systems in Bangladesh – A case study in Gazipur, Kapasia"</b> <i>Proceedings of International Conference of Renewable Energy: Generation and Application 2010</i>, Al-Ain, UAE, March 8-10, 2010</li>
+
+<li> S. Sadrin, M. Hossain, E. Mohith and A. Azad, <b>"Alternative Solar Water Heater for Domestic Purpose"</b> <i>Proceedings of International Conference of Renewable Energy: Generation and Application 2010</i>, Al-Ain, UAE, March 8-10, 2010</li>
+
+<li> C. Basak, C. M. I.Hussain and A. M. Azad, <b>"Improving Reliability for DPDC SCADA Communication Systems"</b> <i>Proceedings of International Conference Electrical Energy &amp; Industrial Electronic Systems, EEIES 2009</i>, Parkroyal Penang, Malaysia, December 7-8, 2009</li>
+
+<li> A. A. Amin, A. A. Faruk, M. A. Alam and A. M. Azad, <b>"Stepper Motor Performance Under Real-Time Multitasking Environment"</b> <i>The TENCON 2009,</i> Singapore, November 23-26, 2009</li>
+
+<li>A. M. Azad, C. M. I.Hussain and M. Alam, <b>"Effect of Hard RTOS on DPDC SCADA System Performance"</b> <i>The IET China-Ireland International Conference on Information and Communications Technologies CIICT2009,</i> National University of Ireland, Maynooth, pp. 98-105, August 19-21, 2009</li>
+
+<li>C. M. I. Hussain, M. Alam and A. M. Azad, <b>"Performance Improvement of DPDC SCADA System Using Hard Real-Time OS"</b> <i>International Conference on Electrical and Computer Engineering (ICECE2008)</i>, Malaka, Malaysia. June2-4, 2009</li>
+
+<li>C. M. I. Hussain M. Alam and A. M. Azad, <b>"Performance of PID Controller Both in Hard and Soft RTOS"</b> <i>The IET, China-Ireland International Conference on Information and Communications Technologies</i>, Beijing, China, pp.732-736 September 26-28, 2008.</li>
+
+<li> A. M. Azad , M. Alam and C. M. I. Hussain, <b>"Delay Analysis of Sampled-Data Systems in Hard RTOS"</b> <i>Proceedings of World Academy of Science, Engineering and Technology,</i> Volume 32 August 2008 ISSN 2070-3740, Singapore, pp.297-302, August 29-31 - September 01, 2008.</li>
+
+<li>A. M. Azad, <b>"Multi-Rate Sampled-Data Systems With Decentralized Control Structure"</b> <i>The IET China-Ireland International Conference on Information and Communications Technologies</i>, Dublin, Ireland, pp.129-136, August 28-29, 2007</li>
+
+<li>A. M. Azad, T. Hesketh and R. Eaton, “<b>Real-time Implementation of Multi-rate Sampling Systems in RT-Linux environment</b>” <i>The Fourth International Conference on Control and Automation, </i>Montreal, Canada, June 10-12, 2003</li>
+
+<li>A. M. Azad and T. Hesketh, “<b>-Optimal Control Of Multi-rate Sampled-data Systems</b>” <i>Proceedings of American Control Conference, </i>Anchorage, Alaska, USA, pp.459-464, May 8-10, 2002</li>
+
+<li>A. M. Azad and T. Hesketh, “<b>Optimal Control Design Of Multi-rate Sampled-data Systems</b>” <i>Proceedings of the Information, Decision And Control, </i>Adelaide, SA, Australia, pp.217-222, February, 2002</li>
+
+<li>A. M. Azad and T. Hesketh, “<b>Decentralized Control Approach To Multi-rate Sampled-Data Systems</b>” <i>Proceedings of The 7th International Conference on Control, Automation, Robotics and Vision</i>, Singapore, pp.468-473, Dec. 2002</li>
+
+<li>A. M. Azad and T. Hesketh, “<b>Optimal Control And Robust Stabilization Of Multi-rate Hybrid Systems</b>” <i>Proceedings of The 4th Asian Control Conference</i>, Singapore, pp.1536-1541, September 25-27, 2002</li>
+
+<li>A. M. Azad, S.F. Siraj and M. A. Zaki, “<b>Improvement of closed-loop performance Analysis of Stepper Motor in High Speed Position Control System</b>” <i>Proceedings of The International Conference on Robotics, Vision and Parallel Processing for Industrial Automation,</i> pp.786-791, Ipoh, Malaysia, 1996</li>
+
+<li>M. A. Zaki, S.F. Siraj and A. M. Azad, “<b>CAD-CAM System for an Embroidery Machine</b>” <i>Proceedings of The International Conference on Robotics, Vision and Parallel Processing for Industrial Automation,</i> pp.1024-1028, Ipoh, Malaysia, 1996.</li>
+			
+           </ol>
+		</li>	
+	</ul>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<div id="footerLeft"><p>Copyright &copy; 2010 <b>CARG</b></p></div>
+	<p id="developer">Developed By: <b><a href="http://www.snaresketcher.com/"><img src="images/ss2.png" /></a></b>
+	& <b> <a href="http://sadaf2605.appspot.com/"><img src="images/ss.png" /></a></b></p></div>
+</div>
+</body>
+</html>
